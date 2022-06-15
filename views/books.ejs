@@ -1,0 +1,104 @@
+<%- include('header') -%>
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<img src="./images/site-logo.png" alt="site logo">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="/">Homepage</a></li>
+					<li><a href="/about">About Me</a></li>
+					<li><a href="/books">Books</a></li>
+					<li><a href="/blogs">Blogs</a></li>
+					<li><a href="/testimonies">Testimonies</a></li>
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>
+
+		</div>
+	</nav>
+	<!-- Navigation end -->
+<!-- Books and CD -->
+<section class="fh5co-books">
+    <div class="site-container">
+        <h2 class="universal-h2 universal-h2-bckg">Books</h2>
+        <div class="books">
+            <div class="single-book">
+                <a href="#" class="single-book__img">
+                    <img src="./images/079.jpg" height="250px" width="250px" alt="single book and cd">
+                    <div class="single-book_download">
+                        <img src="./images/download.svg" alt="book image">
+                    </div>
+                </a>
+                <h4 class="single-book__title">Mr President Needs A Girlfriend</h4>
+                <span class="single-book__price">$0.00</span>
+                <!-- star rating -->
+                <div class="rating">
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                </div>
+                <!-- star rating end -->
+            </div>
+            <div class="single-book">
+                <a href="#" class="single-book__img">
+                    <img src="./images/080.jpg" alt="single book and cd" height="250px" width="250px">
+                    <div class="single-book_download">
+                        <img src="./images/download.svg" alt="book image">
+                    </div>
+                </a>
+                <h4 class="single-book__title">Sinderella</h4>
+                <span class="single-book__price">$0.00</span>
+                <!-- star rating -->
+                <div class="rating">
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                    <span>&#9734;</span>
+                </div>
+                <!-- star rating end -->
+            </div>
+            <div class="single-book">
+                <a href="#" class="single-book__img">
+                    <img src="./images/081.jpg" height="250px" width="250px" alt="single book and cd">
+                    <div class="single-book_download">
+                        <img src="./images/download.svg" alt="book image">
+                    </div>
+                </a>
+                <h4 class="single-book__title">A Pimp For A Tutor</h4>
+                <span class="single-book__price">$0.00</span>
+            </div>
+            <div class="single-book">
+                <a href="#" class="single-book__img">
+                    <img src="./images/082.jpg" height="250px" width="250px" alt="single book and cd">
+                    <div class="single-book_download">
+                        <img src="./images/download.svg" alt="book image">
+                    </div>
+                </a>
+                <h4 class="single-book__title">Mr President's Matchmaker</h4>
+                <span class="single-book__price">$0.00</span>
+            </div>
+        </div>
+        <div class="books-brand-button">
+            <a href="#" class="brand-button">View more</a>
+        </div>
+    </div>
+</section>
+<%- include('footer') -%>
+<!-- Books and CD end -->
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
