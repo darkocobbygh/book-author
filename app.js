@@ -34,6 +34,6 @@ app.get('/testimonies',(req,res)=>{
     res.render('testimonies',{title:title})
 })
 
-app.listen('3000',()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log('Book server started on port 3000');
 })
